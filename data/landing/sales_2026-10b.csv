@@ -1,0 +1,12 @@
+order_id,order_date,store_id,store_name,barangay,city,product_id,product_name,category,quantity,unit_price
+ORD-2001,2026-10-05,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P007,Bottled water 500mL,Beverages,4,15.00
+ORD-2001,2026-10-05,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P008,Bread loaf,Bakery,2,65.00
+ORD-2002,2026-10-05,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P009,Canned tuna 155g,Canned Goods,3,35.00
+ORD-2002,2026-10-05,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P010,Laundry detergent sachet,Household,6,8.00
+ORD-2003,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P011,Eggs per piece,Dairy and Eggs,12,9.00
+ORD-2003,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P012,White sugar 1kg,Grains,2,65.00
+ORD-2004,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P013,Banana chips pack,Snacks,3,20.00
+ORD-2004,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P014,Instant noodles pack,Noodles,5,14.00
+ORD-2002,2026-10-05,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P009,Canned tuna 155g,Canned Goods,3,35.00
+ORD-2005,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P015,Cooking oil 250mL,Cooking Essentials,2,
+ORD-2006,2026-10-06,S004,Bagumbong Mini Mart,Brgy. Bagumbong,Caloocan City,P016,Premium rice 1kg,Grains,1,75.00
