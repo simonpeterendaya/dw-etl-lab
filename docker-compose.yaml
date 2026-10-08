@@ -26,6 +26,21 @@ x-airflow-common: &airflow-common
       condition: service_healthy
 
 services:
+  airflow-permissions:
+    image: alpine:3.20
+    user: "0:0"
+    command:
+      - sh
+      - -c
+      - |
+        mkdir -p /mnt/logs /mnt/plugins /mnt/datalake/raw /mnt/datalake/staged
+        chown -R ${AIRFLOW_UID:-50000}:0 /mnt/logs /mnt/plugins /mnt/datalake
+    volumes:
+      - ./logs:/mnt/logs
+      - ./plugins:/mnt/plugins
+      - ./datalake:/mnt/datalake
+    restart: "no"
+
   airflow-db:
     image: postgres:16
     environment:
@@ -59,6 +74,10 @@ services:
     <<: *airflow-common
     command: db migrate
     restart: "no"
+    depends_on:
+      <<: *airflow-depends
+      airflow-permissions:
+        condition: service_completed_successfully
 
   airflow-apiserver:
     <<: *airflow-common
